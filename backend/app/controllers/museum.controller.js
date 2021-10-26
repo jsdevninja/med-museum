@@ -6,7 +6,7 @@ exports.getMuseums = async (req, res) => {
     const response = await fetch(
       `https://collectionapi.metmuseum.org/public/collection/v1/objects?metadataDate=${today.getFullYear()}-${
         today.getMonth() + 1
-      }-${today.getDate()}`
+      }-${today.getDate() - 1}`
     );
     const data = await response.json();
     res.status(200).send(data);
