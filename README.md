@@ -17,6 +17,7 @@ npm run dev
 3. Run Frontend
 ```
 cd frontend
+cp .env.example .env
 npm install
 npm run serve
 ```
